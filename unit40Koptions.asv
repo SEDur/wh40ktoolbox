@@ -1,0 +1,46 @@
+classdef unit40Koptions
+    properties
+        name
+        numModels
+        gear
+        movement
+        pointsPerModel
+        balisticSkill
+        weaponSkill
+        type
+        strength
+        toughness
+        woundsPerModel
+        attacks
+        leadership
+        save
+        power
+    end
+    methods
+        function obj = unit40koptions(unitString)
+            obj.name = unitString;
+            switch obj.name
+                case 'Typhus'
+                    obj = obj.Typhus;
+                otherwise
+                    error('This is not implemented yet');
+            end
+        end
+        function obj = Typhus(obj)
+            obj.numModels = 
+            obj.gear = [gear40k()];
+            obj.movement = 
+            obj.pointsPerModel = 
+            obj.balisticSkill = 
+            obj.weaponSkill = 
+            obj.type = 'HQ';
+            obj.strength = 
+            obj.toughness = 
+            obj.woundsPerModel = 
+            obj.attacks = 
+            obj.leadership = 
+            obj.save = 
+            obj.power = 
+        end
+    end
+end
